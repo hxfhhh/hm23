@@ -37,7 +37,7 @@
           <el-menu-item index="2-4">粉丝列表</el-menu-item>
       </el-submenu>
       <!-- 导航四 -->
-      <el-menu-item index="4">
+      <el-menu-item index="3">
         <i class="el-icon-s-tools"></i>
         <span slot="title">账户信息</span>
       </el-menu-item>
