@@ -12,8 +12,7 @@ export default new Router({
     {
       path: '/',
       // name: 'home',
-      redirect: '/home',
-      component: Home
+      redirect: '/home'
     },
     {
       path: '/login',
@@ -26,6 +25,10 @@ export default new Router({
         {
           path: '',
           component: Main
+        },
+        {
+          path: 'comment',
+          component: () => import('./views/comment')
         }
       ]
     }
