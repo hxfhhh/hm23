@@ -5,7 +5,7 @@ import jsonBig from 'json-bigint'
 
 axios.defaults.baseURL = 'http://ttapi.research.itcast.cn/mp/v1_0'
 axios.defaults.transformResponse = [function (data) {
-  return jsonBig.parse(data)
+  return data ? jsonBig.parse(data) : {}
 }]
 axios.interceptors.request.use(function (config) {
   let token = window.localStorage.getItem('user-token')
